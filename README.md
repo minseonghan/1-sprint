@@ -8,29 +8,31 @@
 1. 자신의 깃허브 아이디로 브랜치 만든 다음에 개인 폴더 만들어주세요.
 2. 작업 하시고 커밋 후 오리진으로 푸시해주시면 됩니다.
 3. main 으로 풀리퀘 날려주시면 됩니다. merge 는 하시면 안돼요!  
-   풀리퀘 제목 : `"이름" 스프린트 1주차 과제 제출합니다.`
+   풀리퀘 제목 : `1주차 "이름" 스프린트 과제 제출합니다.`
 
 ### 예시
 
 ```bash
-git clone git@github.com:HateSlop/pre-week1.git  # 클론
-cd pre-week1 # 프로젝트 루트로 이동
-git checkout -b siwonblue # 브랜치 생성
-mkdir siwonblue # 개인 폴더 만들기
-cd siwonblue # 개인 폴더로 이동
+git clone git@github.com:minseonghan/1-sprint.git  # 클론
+cd 1-sprint # 프로젝트 루트로 이동
+git checkout -b minseongh # 브랜치 생성
+mkdir minseongh # 개인 폴더 만들기
+cd minseongh # 개인 폴더로 이동
 git add . # 작업 후 add
-git commit -m "[feat] ~~" # 커밋
-git push origin siwonblue # 오리진에 푸시
+git commit -m "[feat] ~~" # 커밋, sprint 과제 같은 경우는 [docs]로 올리시면 됩니다.
+git push origin minseongh # 오리진에 푸시
 ```
 
 ### 폴더구조
 
 ```bash
 .
-├── README.md
-└── siwonblue #(개인 폴더)
-    ├── README.md #(주차별 보고서)
-    └── pre_week1.ipynb #(코랩 작업 파일)
+├── README.md # 프로젝트 설명 리드미 (수정X)
+└── minseongh #(개인 폴더)
+    └── week1 # 주차별 요약 정리
+      ├── README.md # 주차별 요약 정리
+      ├── pre-sprint-1.ipynb #(예제 실습 파일) 
+      └── pre-sprint-1.py #(예제 실습 파일) (sprint 과제는 예제 실습 파일을 작성하지 않으셔도 됩니다.)
 ```
 
 ## 커밋 컨벤션
